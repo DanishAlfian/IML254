@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Webpage</title>
+    <style>
+
+        body {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+            padding: 20px;
+		background-color: #F2E9E4;
+        }
+        .item {
+            background-color: #F2E9E4;
+            padding: 20px;
+            text-align: center;
+        }
+	.item-1{
+		  grid-column: span 8;
+		font-family:Segoe UI Black;
+		font-size: 60px;
+		color: #E09E50;
+
+}
+
+        .item-10 {
+            grid-column: span 3;
+            grid-row: span 5;
+            position: relative;
+        }
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+       .item-10:hover .image {
+            opacity: 0.3;
+        }
+        .item-10:hover .middle {
+            opacity: 1;
+        }
+        .text {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+	.item-17 {
+    		grid-column: span 3;
+    		grid-row: span 3;
+   		font-family:Bahnschrift;
+  		font-family:Bahnschrift;
+    		text-align: justify;
+    		text-justify: inter-word;
+    		font-size: 20px;
+    		padding: 50px;
+		border: 2px solid black;
+		border-left: none;
+            	border-right: none;
+		border-right: none;
+		
+}	
+
+    </style>
+</head>
+<body>
+    <div class="item item-1">PRIMARY SCHOOL</div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-10">
+	<img src="image/skm.jpg" alt="Avatar" class="image" >
+  	<div class="middle">
+    	<div class="text"><b>SEKOLAH KEBANGSAAN MACHANG LOGO</b></div>
+	</div>
+	</div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-17 ">I started attending Sekolah Kebangsaan Machang at the age of 7, which was in 2007, and continued there until 2012 when I graduated from primary school at the age of 12. Unfortunately, I don't have any memorable photos from my primary school years as I didn't have a phone back then. However, I can still vividly recall playing with my friends during those years. I didn't achieve much during that time, but my highlight achievements were getting 5As in UPKK and 4Bs in UPSR.</div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+
+</body>
+</html>

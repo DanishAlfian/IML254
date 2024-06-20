@@ -1,0 +1,284 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Verdana, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            background-color: #FAF9F6; /* Light cream background */
+        }
+    .header {
+        display: grid;
+        background-color: #F2E9E4; /* Light peach background */
+        grid-template-columns: 150px 200px 1fr 150px 150px;
+        align-items: center;
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        z-index: 2;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        color: #5D5348; /* Dark taupe text color */
+        padding: 16px;
+        font-size: 100%;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        width: 100%;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        justify-self: center;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #F2E9E4; /* Light peach background */
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Soft shadow */
+        z-index: 1000;
+    }
+
+    .dropdown-content a {
+        color: #5D5348; /* Dark taupe text color */
+        padding: 15px 16px;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #E0CEC8; /* Light peach hover background */
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #E0CEC8; /* Light peach hover background */
+        color: #5D5348; /* Dark taupe text color */
+    }
+
+    #navbar a {
+        display: block;
+        color: #5D5348; /* Dark taupe text color */
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #navbar a:hover {
+        background-color: #E0CEC8; /* Light peach hover background */
+    }
+
+    .item-1, .item-2, .item-3, .item-4, .item-5 {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .item-3 img {
+        width: 200px;
+        height: 45px;
+    }
+
+    .content {
+        display: grid;
+        flex: 1;
+        padding: 20px;
+        background-color: #F2E9E4; /* Light cream background */
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Adjusts columns to fit the screen */
+        gap: 20px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+	
+
+    .content1 {
+        grid-column: 1 / -1; /* Spans across all columns */
+        padding: 50px 19px;
+        text-align: center;
+    }
+
+    .image-container {
+        grid-column: 2; 
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #5D5348; /* Dark taupe overlay color */
+    }
+
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        color: #FAF9F6; /* Light cream text color */
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .content2 {
+        align-self: start;
+        justify-self: center;
+        text-align: left;
+        grid-column: 3/ span4; 
+    }
+
+    .vertical-line {
+        border-left: 2px solid #5D5348; /* Dark taupe vertical line */
+        height: 2em; /* Adjust height as needed */
+        display: inline-block; /* Ensures the line doesn't break the flow */
+        margin: 0 0.5em; /* Adjust margin as needed */
+    }
+
+    .footer {
+        background-color: #5D5348; /* Dark taupe footer background */
+        color: #FAF9F6; /* Light cream text color */
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 -4px 2px -2px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+
+ul.breadcrumb {
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #5D5348;;
+}
+ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+}
+ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+	color: #01447e;
+	 text-decoration: underline;
+}
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + .content {
+        padding-top: 60px;
+    }
+</style>
+</head>
+<body>
+    <div class="header" id="navbar">
+        <nav class="item-1"><a href="index.html"><b>HOME</b></a></nav>
+        <div class="dropdown item-2">
+            <button class="dropbtn"><b>ABOUT ME</b></button>
+            <div class="dropdown-content">
+                <a href="profile.html" target="content">Profile</a>
+             
+                <a href="interest.html">Interest</a>
+            </div>
+        </div>
+        <div class="item-3"><img src="image/danishlogo.png" alt="My Logo"></div>
+        <div class="dropdown item-4">
+            <button class="dropbtn"><b>EDUCATION</b></button>
+            <div class="dropdown-content">
+                <a href="primaryschool.html">Primary School</a>
+                <a href="highschool.html">High School</a>
+                <a href="diploma.html">Diploma</a>
+            </div>
+        </div>
+        <div class="dropdown item-5">
+            <button class="dropbtn"><b>GALLERY</b></button>
+            <div class="dropdown-content">
+                <a href="family.html">Family</a>
+                <a href="Friend.html">Friends</a>
+            </div>
+        </div>
+    </div>
+<div class="content">
+
+	
+    <div class="content1">
+ <img src="image/welcomevideo.gif" alt="Welcome Video" width="1250" height="550">
+    </div>
+    <div class="image-container">
+        <img src="image/danish2.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">THIS IS MEE!!<br><3 0w0</div>
+        </div>
+    </div>
+    <div class="content2">
+        <h1 style="color: #E09E50;"><center>Dive Into My Story <br>And Uncover Who I Am</center></h1><p><center><span class="vertical-line"></span><p><p style="font-family:serif; font-size:20px;">Hello there! I'm a twenty-year-old student currently <br>pursuing my studies at UiTM Kedah.<br> With a penchant for connecting with new faces, I tread<br> the line between introversion and <br>curiosity, always seeking to unravel the intricate<br> layers of human connection.</p></center>
+    </div>
+</div>
+
+<div class="footer">
+    <p> &copy;2024 MUHAMMAD DANISH ALFIAN BIN MOHD ZULLKIFLI. ALL RIGHTS RESERVED.</p>
+  <p>
+<ul class="breadcrumb">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="profile.html">Profile</a></li>
+  
+  <li><a href="interest.html">Interest</a></li>
+  <li><a href="primaryschool.html">Primary School</a></li>
+  <li><a href="highschool.html">High School</a></li>
+  <li><a href="diploma.html">Diploma</a></li>
+  <li><a href="family.html">Family</a></li>
+  <li><a href="Friend.html">Friends</a></li>
+</ul>
+    </div>
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+</html>

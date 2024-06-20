@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Webpage</title>
+    <style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:  #F2E9E4;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+            padding: 10px;
+            background-color:  #F2E9E4;
+        }
+        .item {
+            background-color:  #F2E9E4;
+            border: 1px solid #F2E9E4;
+            padding: 20px;
+            text-align: center;
+        }
+        .item-1-4 {
+            grid-column: span 4;
+            font-family: sans-serif;
+            font-size: 50px;
+            text-align: left;
+            text-align: center;
+        }
+        .item-1-4 span {
+            display: block;
+            font-size: 12px;
+            color: grey;
+            text-align: center;
+            margin-top: -12px; /* Adjust this value as needed to bring the text closer */
+        }
+        .item-6-16 {
+            grid-column: span 3;
+            grid-row: span 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #ccc;
+            border: 3px solid black; 
+        }
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .item-17-20 {
+            grid-column: span 4;
+            font-family: sans-serif;
+            font-size: 15px;
+            text-align: center;
+        }
+        .item-31-56 {
+            grid-column: span 2;
+            grid-row: span 4;
+            font-family: arial;
+            background-color: #EF9771;
+            border: 1px solid black;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 15px;
+        }
+        .item-34-59 {
+            grid-column: span 2;
+            grid-row: span 4;
+            font-family: arial;
+            background-color: #F8D7A8;
+            border: 1px solid black;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 10px;
+        }
+        .item-64-66 {
+            grid-column: span 3;
+            border: 2px solid black;
+            border-left: none;
+            border-right: none;
+            text-align: center;
+        }
+        .button {
+            background-color: #04AA6D; /* Green */
+            border: transparent ;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.6s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color: rgba(255, 99, 71, 0.5); 
+            color: black; 
+            border: none;
+            border-radius: 100px; /* Changed this line */
+        }
+        .button1:hover {
+            background-color: black;
+            color: white;
+        }
+        a {
+            color: inherit; 
+            text-decoration: none; 
+        }
+        .item-94-152 {
+            grid-column: span 3;
+            grid-row: span 8;
+            border-top-right-radius: 19px;
+            border-bottom-right-radius: 19px;
+            border: 1px solid #000;
+            border-style: hidden;
+            background-color: #F2E9E4;
+        }
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            height: 100%;
+        }
+        .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire area without distortion */
+            border-top-right-radius: 19px;
+            border-bottom-right-radius: 19px;
+        }
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        .item-105-146 {
+            grid-column: span 3;
+            grid-row: span 6;
+            border-style: hidden;
+            background-color:  #F2E9E4;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        ul.custom-list {
+            list-style-type: none; 
+            padding: 0;
+            margin: 0;
+        }
+        ul.custom-list li {
+            display: flex;
+            margin: 5px 0; /* Spacing between list items */
+        }
+        ul.custom-list li .label {
+            flex: 0 0 130px;
+            font-size: 13px;
+            font-weight: bold; 
+        }
+        ul.custom-list li .value {
+            flex: 1;
+            text-align: left;
+            font-size: 13px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1-4">
+            <b>ASSALAMUALAIKUM</b>
+            <span>(Peace be upon you*)</span>
+        </div>
+        <div class="item"></div>
+        <div class="item item-6-16">
+            <div class="profile-picture">
+                <img src="image/danishprofile.jpg" alt="my profile">
+            </div>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item item-17-20">
+            I'm Danish Alfian, a semester 4 student who currently studying at UiTM Kedah 
+            campus Sungai Petani. Here I'm taking Diploma in Informatic Library Studies which I slowly
+            fell in love with along my study years. Studying this course has given me great experience as I'm
+            able to learn Python and HTML to create a website, like this one! 
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item item-31-56">
+            <h1 style="font-size:40px;">My Birth</h1>
+            <p style="font-size: 14px;">
+                I was born on Monday, December 6th, 2004, at the Universiti Kuala Lumpur Hospital,
+                a significant day in my family's history. As the fourth of five siblings, I share a 
+                special connection with my sister, as we are the only ones born in the vibrant
+                city of Kuala Lumpur. My mother has often shared with me the story of my birth, recounting
+                how she decided to name me Alfian in honor of the compassionate doctor who assisted
+                her during my delivery.
+            </p>
+        </div>
+        <div class="item"></div>
+        <div class="item item-34-59">
+            <h1 style="font-size:40px;">My Hometown</h1>
+            <p style="font-size: 14px;">
+                From the ages of 1 to 3, my family and I lived in Kuala Lumpur.
+                Afterward, we relocated to Machang, Kelantan, where we've been living
+                ever since. Even though our house isn't big, I'm happy as long as we're
+                all together.
+            </p>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="
+
+item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item item-64-66"><b>Got something on your mind to tell me?<br>Let's have a chat</b></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item button1"><a href="mailto:danishzullkifli@gmail.com">
+            <b style="font-size:20px; text-align:center;"><center>Email Me</b></center></a></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item item-94-152">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="image/danish1.jpg" alt="slide1" >
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/danishblur.jpg" alt="slide2" >
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/danishwan.jpg" alt="slide3" >
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/danish4.jpg" alt="slide4" >
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/danish2.jpg" alt="slide4" >
+                </div>
+            </div>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item item-105-146">
+            <h4><b><u>Personal Information</u></b></h4>
+            <ul class="custom-list">
+                <li><span class="label">NAME</span><span class="value">: Muhammad Danish Alfian Bin Mohd Zullkifli</span></li>
+                <li><span class="label">AGE</span><span class="value">: 20</span></li>
+                <li><span class="label">GENDER</span><span class="value">: Male</span></li>
+                <li><span class="label">BIRTHDAY</span><span class="value">: 6/12/2004</span></li>
+                <li><span class="label">RELIGION</span><span class="value">: Islam</span></li>
+                <li><span class="label">NUMBER</span><span class="value">: +60106547423</span></li>
+                <li><span class="label">EMAIL</span><span class="value">: danishzullkifli@gmail.com</span></li>
+            </ul>
+            <h4><b><u>Fun Facts</u></b></h4>
+            <ul class="custom-list">
+                <li><span class="value">I'm a bit clumsy</span></li>
+                <li><span class="value">I visualize my thoughts</span></li>
+                <li><span class="value">I like chicken chop</span></li>
+                <li><span class="value">I actually want to become a doctor</span></li>
+                <li><span class="value">I don't have a specific favourite color because I like many colors</span></li>
+                <li><span class="value">I don't like to wear shoes</span></li>
+                <li><span class="value">I love to play games and badminton</span></li>
+            </ul>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+        }
+    </script>
+</body>
+</html>
