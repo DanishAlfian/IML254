@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+            padding: 20px;
+		background-color: #F2E9E4;
+        }
+        .item {
+            background-color:  #F2E9E4;
+           
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item-1 {
+            grid-column: span 8;
+            font-family: 'Segoe UI Black';
+            font-size: 60px;
+		color: #E09E50;
+        }
+
+        .item-10 {
+            grid-column: span 3;
+            grid-row: span 5;
+            position: relative;
+        }
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .item-10:hover .image {
+            opacity: 0.3;
+        }
+        .item-10:hover .middle {
+            opacity: 1;
+        }
+        .text {
+            background-color: #0000FF;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        .item-17 {
+            grid-column: span 3;
+            grid-row: span 3;
+            font-family: Bahnschrift;
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: 20px;
+            padding: 50px;
+            border: 2px solid black;
+            border-left: none;
+            border-right: none;
+        }
+
+        .item-24 {
+            grid-column: span 3;
+            font-family: Bahnschrift;
+        }
+
+        .item-34 {
+            grid-column: span 3;
+            grid-row: span 4;
+            position: relative;
+        }
+
+ 
+        .item-35 {
+            grid-column: span 2;
+            grid-row: span 4;
+        }
+
+        .item-36 {
+            grid-column: span 3;
+            grid-row: span 4;
+        }
+
+.flip-card {
+  background-color: transparent;
+  width:100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+  .item-47 {
+            grid-column: span 4;
+            grid-row: span 4;
+		font-family: Bahnschrift;
+		font-size: 20px
+        }
+
+	 .item-71 {
+            grid-column: span 6;
+            grid-row: span 4;
+		font-family: Bahnschrift;
+		font-size: 20px
+        }
+    </style>
+</head>
+<body>
+    <div class="item item-1">HIGH SCHOOL</div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-10">
+        <img src="image/smkm.jpg" alt="Avatar" class="image">
+        <div class="middle">
+            <div class="text"><b>SEKOLAH MENENGAN KEBANGSAAN MACHANG LOGO</b></div>
+        </div>
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-17">I began my high school years in 2013 when I was 13 years old. These years had a significant impact on my character development. During this time, I served as a cooperative prefect. My greatest achievement in high school was earning 5 As in SPM. Although it may not seem like much, it was very meaningful to me.</div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-24"><u><b>SMK MACHANG SONG</b></u>
+        <p>
+            <audio controls>
+                <source src="audio/smkm lagu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </p>
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-34">
+      <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="image/5a.jpg" alt="Avatar" style="width:100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      
+      <p>This is the moment i got 5As SPM</p> 
+     
+    </div>
+  </div>
+</div>
+</div>
+    <div class="item item-35">
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="image/danishtido.jpg" alt="Avatar" style="width:100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      
+      <p>This is proof that i study so hard and make me fall asleep</p> 
+     
+    </div>
+  </div>
+</div>
+</div>
+    <div class="item item-36">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="image/grp5a.jpg" alt="Avatar" style="width:100%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      
+      <p>This is all the excellent SPM student in my year</p> 
+     
+    </div>
+  </div>
+</div>
+</div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-47"><u>This moment was recorded by my friend</u><p> 
+	<video width="500" height="350" controls>
+  <source src="video/5avid.mp4" type="video/mp4">
+ 
+Your browser does not support the video tag.
+</video></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item item-71"><img src="image/smkmbg.jpg" alt="SMK MACHANG" style="width:100%;height:230px;"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+   
+</body>
+</html>
